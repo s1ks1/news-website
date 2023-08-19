@@ -1,0 +1,106 @@
+:root {
+    --primary-color-light: #f0f8f6;
+    --primary-color-black: #000; 
+    --accent-color-blue: #4d9dda;
+    --accent-color-gray: #29262b;
+
+    --btn-padding: 0.5rem;
+}
+
+body {
+    margin: 0px;
+    background: var(--primary-color-light);
+}
+
+.navigation {
+    background-color: var(--primary-color-light);
+    padding: 0px 2rem;
+    filter: drop-shadow(5px 5px 10px var(--accent-color-gray));
+    border-radius: 0px 0px 10px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--accent-color-gray);
+    text-decoration: none;
+}
+
+.nav-items {
+    width: 30%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list a {
+    color: var(--accent-color-gray);
+    text-decoration: none;
+    font-size: large;
+    transition: all 0.5s linear;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color-blue);
+}
+
+.btn-primary {
+    border: 2px solid var(--accent-color-blue);
+    border-radius: 0.5rem;
+    background: var(--accent-color-blue);
+    color: var(--primary-color-light);
+    cursor: pointer;
+    padding: var(--btn-padding);
+    font-weight: bolder;
+    transition: all 0.5s linear;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color-light);
+    color: var(--accent-color-gray);
+}
+
+.btn-secondary {
+    border: 2px solid;
+    border-radius: 0.5rem;
+    color: var(--accent-color-gray);
+    cursor: pointer;
+    padding: var(--btn-padding);
+    font-weight: bolder;
+    transition: all 0.5s linear;
+}
+
+.btn-secondary:hover {
+    border: 2px solid var(--accent-color-gray);
+    background-color: var(--accent-color-gray);
+    color: var(--primary-color-light);
+} 
+
+@media only screen and (max-width: 1200px) {
+    .nav-items{
+        width: 70%;;
+    }
+ }
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-items{
+        width: 100%;;
+    } 
+
+    .nav-list a {
+        padding: 1rem 0rem;
+    }
+ }
