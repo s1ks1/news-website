@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "bd6c3687-efe2-40bc-bb88-21268d225464",
+		"name": "news-test:user-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10289653"
+	},
+	"item": [
+		{
+			"name": "http://localhost/news-website/core/users/create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"newuser\",\r\n    \"email\": \"newuser@example.com\",\r\n    \"password\": \"verysecretpass\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/users/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/users/read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 100\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/users/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"users",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/users/update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"username\": \"root\",\r\n    \"email\": \"root@example.com\",\r\n    \"password\": \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/users/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"users",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/users/delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"100\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/users/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"users",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

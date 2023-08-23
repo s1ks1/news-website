@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "408a2986-0adf-4347-b5e4-6dd72e6047c7",
+		"name": "news-test:comment-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10289653"
+	},
+	"item": [
+		{
+			"name": "http://localhost/news-website/core/comments/create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"first comment\",\r\n    \"post_id\": \"1\",\r\n    \"user_id\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/comments/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"comments",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/comments/update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"content\": \"better comment\",\r\n    \"post_id\": 1,\r\n    \"user_id\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/comments/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"comments",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/comments/read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/comments/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"comments",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/comments/delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/comments/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"comments",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

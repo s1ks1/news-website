@@ -1,4 +1,5 @@
 <?php 
-// This is about page, needs more work
+// This is contact page, needs more work
 include('about.php');
 include('header.php');
+?>

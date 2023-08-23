@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "1e9430e1-0a36-462c-8e3e-b5d0faed490b",
+		"name": "news-test:post-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10289653"
+	},
+	"item": [
+		{
+			"name": "http://localhost/news-website/core/posts/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Post title\",\r\n    \"content\": \"This is content of the post.\",\r\n    \"tag\": \"test\",\r\n    \"category_id\": 1,\r\n    \"user_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/posts/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"posts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/posts/delete",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 101\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/posts/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"posts",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/posts/update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 106,\r\n    \"title\": \"New title\",\r\n    \"content\": \"This is new content of the post.\",\r\n    \"tag\": \"test\",\r\n    \"category_id\": 1,\r\n    \"user_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/posts/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"posts",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/news-website/core/posts/read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "SinisaZoric",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 106;\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/news-website/core/posts/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"news-website",
+						"core",
+						"posts",
+						"read"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

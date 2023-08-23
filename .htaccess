@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteRule ^core/posts/read$ core/posts/read.php [NC,L]
+RewriteRule ^core/posts/read/([0-9_-]*)$ core/posts/read.php?id=$1 [NC,L]
+RewriteRule ^core/posts/create$ core/posts/create.php [NC,L]
+RewriteRule ^core/posts/update$ core/posts/update.php [NC,L]
+RewriteRule ^core/posts/delete$ core/posts/delete.php [NC,L]
+
+RewriteRule ^core/users/read$ core/users/read.php [NC,L]
+RewriteRule ^core/users/create$ core/users/create.php [NC,L]
+RewriteRule ^core/users/update$ core/users/update.php [NC,L]
+RewriteRule ^core/users/delete$ core/users/delete.php [NC,L]
+
+RewriteRule ^core/tags/read$ core/tags/read.php [NC,L]
+RewriteRule ^core/tags/create$ core/tags/create.php [NC,L]
+RewriteRule ^core/tags/update$ core/tags/update.php [NC,L]
+RewriteRule ^core/tags/delete$ core/tags/delete.php [NC,L]
+
+RewriteRule ^core/comments/read$ core/comments/read.php [NC,L]
+RewriteRule ^core/comments/create$ core/comments/create.php [NC,L]
+RewriteRule ^core/comments/update$ core/comments/update.php [NC,L]
+RewriteRule ^core/comments/delete$ core/comments/delete.php [NC,L]

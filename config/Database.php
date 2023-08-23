@@ -2,9 +2,9 @@
 
 class Database
 {
-private $host = 'localhost';
-    private $user = 'root';
-    private $password = '';
+    private $host = 'localhost';
+    private $user = 'enter DB usernmae';
+    private $password = 'enter DB password';
     private $database = 'newsdb';
 
     public function getConnection()
